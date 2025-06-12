@@ -1,0 +1,22 @@
+{
+    "name": "destellos/demo",
+    "description": "Proyecto MVC destellos de glamour",
+    "type": "project",
+    "config": {
+        "platform-check": false
+    },
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models",
+            "Classes\\" : "./classes"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.6",
+        "dompdf/dompdf": "^2.0",
+        "vlucas/phpdotenv": "^5.5",
+        "mpdf/mpdf": "^8.2"
+    }
+}
