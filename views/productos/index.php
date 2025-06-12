@@ -8,12 +8,6 @@
     </select>
   </div>
   <div class="col-md-3">
-    <label for="filtro_tipojoya">Tipo de Joya</label>
-    <select id="filtro_tipojoya" class="form-select">
-      <option value="">-- Todos --</option>
-    </select>
-  </div>
-  <div class="col-md-3">
     <label for="filtro_marca">Marca</label>
     <select id="filtro_marca" class="form-select">
       <option value="">-- Todas --</option>
@@ -66,17 +60,8 @@
                       <label for="marca_id">Marca</label>
                       <select name="marca_id" id="marca_id" class="form-control"></select>
                   </div>
-                  <div class="col">
-                      <label for="tipojoya_id">Tipo de joya</label>
-                      <select name="tipojoya_id" id="tipojoya_id" class="form-control"></select>
-                  </div>
-                  <small class="text-muted">Los precios se calculan automáticamente según el tipo de joya y peso.</small>
               </div>
               <div class="row mb-3">
-                <div class="col">
-                  <label for="producto_peso" class="form-label text-truncate d-block" title="Peso en gramos del producto">Peso en grs. del producto</label>
-                  <input type="number" name="producto_peso" id="producto_peso" class="form-control" step="0.01" min="0" value="0.00">
-                </div>
                 <div class="col">
                   <label for="producto_precio" class="form-label text-truncate d-block" title="Precio del producto">Precio del producto</label>
                   <input type="number" name="producto_precio" id="producto_precio" class="form-control" step="0.01" min="0" value="0.00">
@@ -106,16 +91,6 @@
                   <label for="producto_imagen">Imagen principal</label>
                   <input type="file" name="producto_imagen" id="producto_imagen" accept="image/*" class="form-control">
                   <img id="preview_imagen" src="" alt="Vista previa" class="img-fluid mt-2 d-none" style="max-height: 120px;">
-                </div>
-                <div class="col">
-                  <label for="producto_imagen2">Imagen secundaria</label>
-                  <input type="file" name="producto_imagen2" id="producto_imagen2" accept="image/*" class="form-control">
-                  <img id="preview_imagen2" src="" alt="Vista previa" class="img-fluid mt-2 d-none" style="max-height: 120px;">
-                </div>
-                <div class="col">
-                  <label for="producto_imagen3">Imagen adicional</label>
-                  <input type="file" name="producto_imagen3" id="producto_imagen3" accept="image/*" class="form-control">
-                  <img id="preview_imagen3" src="" alt="Vista previa" class="img-fluid mt-2 d-none" style="max-height: 120px;">
                 </div>
               </div>
 
@@ -154,24 +129,6 @@
                 <img id="img_actual_1" src="images/productos/sin-imagen.png" class="img-thumbnail mb-2" style="max-height: 140px;" alt="Imagen principal actual">
                 <img id="img_nueva_1" class="img-thumbnail mb-2 d-none" style="max-height: 140px;" alt="Nueva imagen seleccionada">
                 <input type="file" name="producto_imagen" id="producto_imagen" class="form-control" accept="image/*">
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label fw-bold">Imagen secundaria</label>
-              <div class="border p-2 rounded bg-light text-center">
-                <img id="img_actual_2" src="images/productos/sin-imagen.png" class="img-thumbnail mb-2" style="max-height: 140px;" alt="Imagen secundaria actual">
-                <img id="img_nueva_2" class="img-thumbnail mb-2 d-none" style="max-height: 140px;" alt="Nueva imagen seleccionada">
-                <input type="file" name="producto_imagen2" id="producto_imagen2" class="form-control" accept="image/*">
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label fw-bold">Imagen adicional</label>
-              <div class="border p-2 rounded bg-light text-center">
-                <img id="img_actual_3" src="images/productos/sin-imagen.png" class="img-thumbnail mb-2" style="max-height: 140px;" alt="Imagen adicional actual">
-                <img id="img_nueva_3" class="img-thumbnail mb-2 d-none" style="max-height: 140px;" alt="Nueva imagen seleccionada">
-                <input type="file" name="producto_imagen3" id="producto_imagen3" class="form-control" accept="image/*">
               </div>
             </div>
 
@@ -218,12 +175,6 @@
           <label for="mov_marca" class="form-label">Marca</label>
           <input type="text" class="form-control" id="mov_marca" readonly>
         </div>
-
-        <div class="mb-2">
-          <label for="mov_tipojoya" class="form-label">Tipo de Joya</label>
-          <input type="text" class="form-control" id="mov_tipojoya" readonly>
-        </div>
-
         <div class="mb-2">
           <label for="mov_cantidad" class="form-label">Cantidad</label>
           <input type="number" class="form-control" id="mov_cantidad" name="mov_cantidad" min="1" required>

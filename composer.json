@@ -1,6 +1,6 @@
 {
-    "name": "destellos/demo",
-    "description": "Proyecto MVC destellos de glamour",
+    "name": "proyecto/demo",
+    "description": "Proyecto MVC",
     "type": "project",
     "config": {
         "platform-check": false

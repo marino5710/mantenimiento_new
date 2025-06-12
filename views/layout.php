@@ -5,13 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="<?= asset('build/js/app.js') ?>"></script>
-    <link rel="shortcut icon" href="<?= asset('images/destellos.png') ?>" type="image/x-icon">
+    <link rel="shortcut icon" href="<?= asset('images/.png') ?>" type="image/x-icon">
     <link rel="stylesheet" href="<?= asset('build/styles.css') ?>">
-    <title>Destellos de Glamour</title>
+    <title>Principal</title>
 
     <style>
         body {
-            background: linear-gradient(to right, #ffffff, #f7d9dc);
             font-family: 'Segoe UI', sans-serif;
             overflow-x: hidden;
         }
@@ -149,8 +148,8 @@
     <!-- Navbar superior -->
     <nav class="navbar navbar-expand-lg navbar-dark px-4 shadow-sm">
         <a class="navbar-brand fw-bold" href="/">
-            <img src="<?= asset('images/destellos.png') ?>" width="35px" alt="logo" />
-            Destellos de Glamour
+            <img src="<?= asset('images/.png') ?>" width="35px" alt="logo" />
+          
         </a>
         <button class="btn d-md-none text-white me-3" id="toggleSidebar">
             <i class="bi bi-list" style="font-size: 1.5rem;"></i>
@@ -177,10 +176,6 @@
                 <div class="submenu">
                     <a href="/categorias"><i class="bi bi-tags-fill me-2"></i>Categorías</a>
                     <a href="/marcas"><i class="bi bi-award-fill me-2"></i>Marcas</a>
-                    <a href="/tiposjoya"><i class="bi bi-gem me-2"></i>Tipos de Joya</a>
-                    <a href="/pesos"><i class="bi bi-sliders2-vertical me-2"></i>Configuración de Porcentajes de Peso</a>
-                    <a href="/calcular"><i class="bi bi-calculator me-2""></i>Calcular precios</a>
-
                 </div>
             </div>
 
@@ -194,7 +189,7 @@
     </div>
 
     <div class="container-fluid text-center footer-custom mt-4">
-        Destellos de Glamour &copy; <?= date('Y') ?> - Todos los derechos reservados
+         &copy; <?= date('Y') ?> - Todos los derechos reservados
     </div>
 
     <script>

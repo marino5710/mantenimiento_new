@@ -8,11 +8,8 @@ module.exports = {
     'js/adminusuarios/index' : './src/js/adminusuarios/index.js',
     'js/categorias/index' : './src/js/categorias/index.js',
     'js/marcas/index' : './src/js/marcas/index.js',
-    'js/tiposjoya/index' : './src/js/tiposjoya/index.js',
     'js/productos/index' : './src/js/productos/index.js',
     'js/login/index' : './src/js/login/index.js',
-    'js/pesos/index' : './src/js/pesos/index.js',
-    'js/calcular/index' : './src/js/calcular/index.js',
   },
   output: {
     filename: '[name].js',

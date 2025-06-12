@@ -190,7 +190,6 @@ const cargarSelect = async (url, selectId, nombreCampo, placeholder = 'Seleccion
 const cargarCombos = () => {
     cargarSelect('/API/categorias/buscar', 'categoria_id', 'categoria_nombre');
     cargarSelect('/API/marcas/buscar', 'marca_id', 'marca_nombre');
-    cargarSelect('/API/tiposjoya/buscar', 'tipojoya_id', 'tipojoya_nombre_corto');
 };
 
 cargarCombos();
